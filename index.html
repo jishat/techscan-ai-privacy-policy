@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy  TechScan AI</title>
+<meta name="description" content="Privacy Policy for the TechScan AI Chrome extension. TechScan AI runs primarily on-device, with no ads, trackers, or analytics SDKs." />
+<link rel="icon" type="image/png" href="./assets/icon48.png" />
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f6f7f9;
+    --text: #17181c;
+    --text-muted: #565b66;
+    --border: #e4e6eb;
+    --accent: #2f6fed;
+    --accent-soft: #eaf1ff;
+    --success: #1a7f4f;
+    --success-soft: #e8f7ef;
+    --code-bg: #f1f2f5;
+    --radius: 12px;
+    --max-width: 860px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101114;
+      --bg-soft: #17181d;
+      --text: #eceef2;
+      --text-muted: #9aa0ac;
+      --border: #2a2c33;
+      --accent: #6d9dff;
+      --accent-soft: #16233f;
+      --success: #4fd493;
+      --success-soft: #103524;
+      --code-bg: #1c1e24;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  header.hero {
+    padding: 56px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .brand-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+  }
+
+  .brand-tag {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-top: 14px;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--success-soft);
+    color: var(--success);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .tldr {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 28px 0 44px;
+  }
+
+  .tldr h2 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+  }
+
+  .tldr ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .tldr li { margin: 6px 0; }
+
+  nav.toc {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 48px;
+  }
+
+  nav.toc h2 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin: 0 0 12px;
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    -webkit-columns: 2;
+  }
+
+  nav.toc li { margin: 5px 0; font-size: 0.92rem; }
+
+  @media (max-width: 560px) {
+    nav.toc ol { columns: 1; }
+  }
+
+  section {
+    margin: 44px 0;
+    scroll-margin-top: 24px;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  section h2 .num {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  section h3 {
+    font-size: 1.02rem;
+    margin: 24px 0 8px;
+  }
+
+  p { margin: 12px 0; color: var(--text); }
+  p.muted, li.muted { color: var(--text-muted); }
+
+  ul, ol { padding-left: 22px; }
+  li { margin: 6px 0; }
+
+  code {
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 0.88em;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    background: var(--bg-soft);
+    margin: 14px 0;
+  }
+
+  .badge-no {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--success);
+    background: var(--success-soft);
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-right: 8px;
+  }
+
+  .grid-checks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+
+  .check-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.92rem;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+
+  .check-item .x {
+    color: var(--success);
+    font-weight: 700;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  footer a { color: var(--text-muted); text-decoration: underline; }
+
+  .back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="brand">
+      <img src="./assets/icon128.png" alt="TechScan AI icon" />
+      <div>
+        <div class="brand-name">TechScan AI</div>
+        <div class="brand-tag">Discover the Tech Behind Any Website</div>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="muted">This policy explains what the TechScan AI Chrome extension does, and  just as
+    importantly  what it does <strong>not</strong> do with your data.</p>
+    <div class="meta-row">
+      <span><strong>Effective date:</strong> August 30, 2026</span>
+      <span><strong>Applies to:</strong> TechScan AI, version 1.0.0 and later</span>
+    </div>
+    <div class="meta-row">
+      <span class="pill">No ads or trackers</span>
+      <span class="pill">On-device scanning</span>
+      <span class="pill">No data sold, ever</span>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li>TechScan AI analyzes the page you're currently viewing <strong>entirely inside your browser</strong>. Scanning and scoring do not depend on any TechScan-operated server.</li>
+      <li>Nothing about the pages you visit  URLs, page content, headers, cookies, or scan results  is transmitted off your device for the purpose of running a scan.</li>
+      <li>The "AI" tab uses Chrome's own on‑device model (Gemini Nano, via Chrome's built‑in Prompt API). It runs locally on your machine; TechScan does not operate or have access to any AI backend.</li>
+      <li>We don't use analytics, trackers, ad SDKs, or crash‑reporting services.</li>
+      <li>The extension stores your theme preference and a per‑tab, session‑only cache of scan results locally on your device using the standard <code>chrome.storage</code> API.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-we-collect">Data we collect</a></li>
+      <li><a href="#data-we-do-not-collect">Data we do not collect</a></li>
+      <li><a href="#how-it-works">How scanning works</a></li>
+      <li><a href="#on-device-ai">On-device AI</a></li>
+      <li><a href="#permissions">Permissions explained</a></li>
+      <li><a href="#storage">Local storage &amp; retention</a></li>
+      <li><a href="#sharing">Data sharing &amp; third parties</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#childrens-privacy">Children's privacy</a></li>
+      <li><a href="#your-choices">Your choices &amp; controls</a></li>
+      <li><a href="#chrome-web-store">Chrome Web Store compliance</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">1.</span> Overview</h2>
+    <p>TechScan AI is a Chrome extension that detects the technologies behind a website (frameworks,
+    analytics, hosting, CMS, and more) and audits that site's SEO, security headers, and page weight,
+    with results explained by an on-device AI assistant. It is built as a <strong>local-only tool</strong>:
+    every detector, every scoring rule, and every AI response runs inside your browser, on your device.</p>
+    <p>This policy is written to be read alongside the extension's actual permissions and code  not as
+    boilerplate. If a claim below ever stops matching what the extension does, treat the code as
+    authoritative and please <a href="#contact">report it</a>.</p>
+  </section>
+
+  <section id="data-we-collect">
+    <h2><span class="num">2.</span> Data we collect</h2>
+    <p><strong>TechScan AI's core scanning features do not require sending your data to us.</strong>
+    There is no analytics pipeline, advertising account, or logging service collecting information
+    about your browsing for those features.</p>
+    <p>The extension itself does read certain data <em>locally, in your browser</em>, in order to
+    produce a scan report on your screen:</p>
+    <table>
+      <thead>
+        <tr><th>Data read locally</th><th>Purpose</th><th>Leaves your device?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Page HTML, scripts, meta tags, and DOM structure of the active tab</td>
+          <td>Detect technologies and compute SEO/security/weight scores</td>
+          <td><span class="badge-no">NO</span></td>
+        </tr>
+        <tr>
+          <td>HTTP response headers for the page's main document</td>
+          <td>Security-header checks (CSP, HSTS, cookie flags, etc.)</td>
+          <td><span class="badge-no">NO</span></td>
+        </tr>
+        <tr>
+          <td>Cookies set by the site you're viewing (names/flags only)</td>
+          <td>Audit <code>Secure</code>/<code>HttpOnly</code>/<code>SameSite</code> flags, including on cookies JavaScript can't see</td>
+          <td><span class="badge-no">NO</span></td>
+        </tr>
+        <tr>
+          <td>The active tab's URL and title</td>
+          <td>Label the scan and show which site the report belongs to</td>
+          <td><span class="badge-no">NO</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>All of the above is processed in memory and/or written to the extension's own local storage
+    sandbox (see <a href="#storage">Local storage &amp; retention</a>). None of it is sent to a
+    TechScan server, because no such server exists to send it to.</p>
+  </section>
+
+  <section id="data-we-do-not-collect">
+    <h2><span class="num">3.</span> Data we do not collect</h2>
+    <p>To be explicit, TechScan AI does not collect, transmit, or have any mechanism to collect:</p>
+    <div class="grid-checks">
+      <div class="check-item"><span class="x">✕</span> Financial or payment information</div>
+      <div class="check-item"><span class="x">✕</span> Health information</div>
+      <div class="check-item"><span class="x">✕</span> Location data</div>
+      <div class="check-item"><span class="x">✕</span> Analytics, telemetry, or usage statistics</div>
+      <div class="check-item"><span class="x">✕</span> Advertising or tracking identifiers</div>
+      <div class="check-item"><span class="x">✕</span> Keystrokes, form inputs, or clipboard content</div>
+    </div>
+    <p class="muted">The current version of TechScan AI does not require an account or sign-in to use
+    its core scanning features.</p>
+  </section>
+
+  <section id="how-it-works">
+    <h2><span class="num">4.</span> How scanning works</h2>
+    <p>When you open the TechScan AI popup on a tab:</p>
+    <ol>
+      <li>A content script already running on that page (injected per the manifest's
+        <code>content_scripts</code> declaration) reads the page's DOM, scripts, meta tags, and
+        globals, and builds a snapshot.</li>
+      <li>The extension's background service worker combines that snapshot with response headers and
+        cookies it observed for that same page, runs its technology detectors and scoring rules, and
+        produces a report.</li>
+      <li>The popup displays that report. It is discarded  or replaced by the next scan  when you
+        close the tab or navigate away, subject to the short-lived session cache described in
+        <a href="#storage">Local storage &amp; retention</a>.</li>
+    </ol>
+    <p>The one outbound network request the extension can make is a request for the <em>current
+    site's own</em> <code>manifest.json</code> (its web app manifest)  issued to that site directly,
+    the same way your browser would request any other resource from a page you're already on. This
+    request never goes to TechScan, and no response from it is sent anywhere but your own browser.</p>
+    <p>No other network requests are made by the extension. It does not "phone home," check for
+    updates outside Chrome's own extension update mechanism, or fetch remote configuration, code, or
+    ad content at runtime.</p>
+  </section>
+
+  <section id="on-device-ai">
+    <h2><span class="num">5.</span> On-device AI</h2>
+    <p>The "AI" tab uses <strong>Chrome's built-in AI</strong>  Gemini Nano, accessed through
+    Chrome's native Prompt API (available on Chrome 138+ on desktop). This model runs locally on your
+    computer, as part of the browser itself. TechScan AI does not operate an AI service, does not hold
+    an API key to one, and does not proxy your data to any AI provider (including Google, OpenAI, or
+    Anthropic).</p>
+    <p>The scan data used to generate an AI explanation  the detected technologies and audit results
+    for the current page  is passed to the on-device model directly within your browser and never
+    leaves it for this purpose. If your browser or Chrome profile doesn't support the on-device model,
+    the AI tab explains that plainly rather than silently falling back to a cloud service; the rest of
+    the extension continues to work normally either way.</p>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">6.</span> Permissions explained</h2>
+    <p>Chrome requires every extension permission to be declared up front. Here is what TechScan AI
+    requests and, honestly, why:</p>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>What it allows</th><th>Why TechScan AI needs it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>storage</code></td>
+          <td>Read/write the extension's local, sandboxed storage</td>
+          <td>Save your theme preference and cache the current tab's scan result. Never synced to an
+            external server.</td>
+        </tr>
+        <tr>
+          <td><code>scripting</code></td>
+          <td>Inject scripts into tabs</td>
+          <td>Re-inject the page collector into tabs that were already open before you installed or
+            reloaded the extension (normal content-script injection covers tabs opened afterward).</td>
+        </tr>
+        <tr>
+          <td><code>webRequest</code></td>
+          <td>Observe request/response metadata</td>
+          <td>Read the response headers of the page you're viewing  the entire basis of the security
+            audit (CSP, HSTS, X-Frame-Options, etc.). This permission lets TechScan <em>read</em>
+            header data only; it cannot and does not modify, block, or redirect any request.</td>
+        </tr>
+        <tr>
+          <td><code>cookies</code></td>
+          <td>Read cookies for the current site</td>
+          <td>Audit <code>HttpOnly</code> cookie flags, which are invisible to page JavaScript
+            (<code>document.cookie</code>) and therefore can only be checked through this API.</td>
+        </tr>
+        <tr>
+          <td><code>host_permissions: &lt;all_urls&gt;</code></td>
+          <td>Run on any site you navigate to</td>
+          <td>TechScan is a general-purpose scanner  it needs to be able to analyze whichever site
+            you choose to open it on, since there's no way to know that site in advance.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted">TechScan AI requests the narrowest set of permissions its features require, and
+    every one of them is used exclusively for on-device analysis of the page you asked it to scan.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="num">7.</span> Local storage &amp; retention</h2>
+    <ul>
+      <li><strong><code>chrome.storage.local</code></strong>  stores your light/dark/system theme
+        preference. Persists until you remove the extension or clear it yourself; never leaves your
+        device.</li>
+      <li><strong><code>chrome.storage.session</code></strong>  caches the current scan's response
+        headers and report in memory for the duration of your browser session, so re-opening the
+        popup on the same tab is instant. This is cleared automatically when you close your browser
+        and is never written to disk.</li>
+    </ul>
+    <p>Uninstalling the extension removes all of the above, in line with Chrome's standard extension
+    storage lifecycle. There is no server-side copy to delete because none was ever created.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">8.</span> Data sharing &amp; third parties</h2>
+    <p>TechScan AI does not share, sell, rent, or trade user data with third parties. Specifically,
+    there are:</p>
+    <ul>
+      <li>No third-party analytics SDKs (no Google Analytics, no Mixpanel, no Sentry, no crash
+        reporters)</li>
+      <li>No advertising networks or pixels</li>
+      <li>No external APIs called with your data, aside from the on-device Chrome AI model described
+        in <a href="#on-device-ai">section 5</a>, which runs locally and is not a network call</li>
+      <li>No data brokers, and no use of your data for purposes unrelated to displaying the scan
+        results you asked for</li>
+    </ul>
+    <p>TechScan AI's handling of user data complies with the
+    <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>,
+    including its Limited Use requirements: data is used solely to provide and improve the single,
+    disclosed purpose of the extension (technology/SEO/security/performance scanning), is never used
+    for advertising, and is never sold or transferred to third parties.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">9.</span> Security</h2>
+    <p>Because scan data itself never leaves your browser, the extension's core scanning features
+    carry no server-breach risk for that data. Locally:</p>
+    <ul>
+      <li>The extension's code is bundled at build time and submitted for review as part of the
+        Chrome Web Store listing. It does not fetch or execute remote code at runtime.</li>
+      <li>All storage uses Chrome's own sandboxed <code>chrome.storage</code> APIs, isolated per
+        extension by the browser.</li>
+      <li>Permissions are used strictly for their stated purpose; the extension does not modify,
+        inject content into, or block network traffic despite having read access to it.</li>
+    </ul>
+  </section>
+
+  <section id="childrens-privacy">
+    <h2><span class="num">10.</span> Children's privacy</h2>
+    <p>TechScan AI is a developer/webmaster-oriented diagnostic tool and is not directed at children.
+    It does not knowingly collect information from anyone, of any age  consistent with the rest of
+    this policy  so no age-specific data collection occurs.</p>
+  </section>
+
+  <section id="your-choices">
+    <h2><span class="num">11.</span> Your choices &amp; controls</h2>
+    <ul>
+      <li><strong>Uninstall anytime</strong> from <code>chrome://extensions</code>  this removes all
+        locally stored data along with the extension.</li>
+      <li><strong>Clear cached data</strong> by removing the extension's storage from
+        <code>chrome://extensions</code> → TechScan AI → "Remove," or simply by closing your browser,
+        which clears the session cache automatically.</li>
+      <li><strong>Verify our claims</strong>  you can inspect exactly what the extension does at
+        any time using Chrome's own <code>chrome://extensions</code> details view, or by contacting us
+        (see <a href="#contact">Contact</a>) with any question about this policy.</li>
+    </ul>
+  </section>
+
+  <section id="chrome-web-store">
+    <h2><span class="num">12.</span> Chrome Web Store compliance</h2>
+    <p>This policy is published in support of TechScan AI's listing on the Chrome Web Store and is
+    intended to satisfy the disclosure requirements of the
+    <a href="https://developer.chrome.com/docs/webstore/program-policies/" target="_blank" rel="noopener noreferrer">Chrome Web Store Developer Program Policies</a>,
+    including:</p>
+    <ul>
+      <li><strong>Single purpose</strong>  TechScan AI's single purpose is analyzing the currently
+        viewed webpage (technology detection plus SEO/security/performance auditing) and explaining
+        the results.</li>
+      <li><strong>Permission justification</strong>  every requested permission is mapped to a
+        specific feature in <a href="#permissions">section 6</a>, with no unused or speculative
+        permissions.</li>
+      <li><strong>No remote code</strong>  all logic ships inside the extension package reviewed by
+        the Chrome Web Store; nothing is fetched and executed at runtime.</li>
+      <li><strong>Accurate data disclosure</strong>  the data-use categories declared in the Chrome
+        Web Store listing reflect this policy: no category is used for a purpose other than the
+        extension's disclosed function, and none is sold.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">13.</span> Changes to this policy</h2>
+    <p>If TechScan AI ever changes what it collects or how it works  for example, if a future
+    version adds an optional cloud feature  this policy will be updated first, the "Effective date"
+    above will change, and the update will be described in the extension's Chrome Web Store listing
+    and/or release notes. We will not silently expand data collection behind an unchanged policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">14.</span> Contact</h2>
+    <p>Questions, concerns, or a claim in this policy that doesn't match what you observe the
+    extension doing? Reach out:</p>
+    <div class="card">
+      <p style="margin:0"><strong>Email:</strong> <a href="mailto:arjishat@gmail.com">arjishat@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 TechScan AI. This document may be reproduced for the purpose of reviewing or verifying
+    TechScan AI's data practices.</p>
+    <a class="back-to-top" href="#overview">Back to top ↑</a>
+  </footer>
+
+</div>
+</body>
+</html>
